@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <video autoplay loop muted id="video-background">
+        <source src="images/bg.mp4" type="video/mp4">
+        <!-- Add additional video formats (e.g., WebM, Ogg) for cross-browser compatibility -->
+    </video>
+    
+    
+    <div class="container">
+        <div class="search-box">
+            <i class='bx bxs-map'></i>
+            <input type="text" id="search-input" placeholder="Search for a city">
+            <button class='bx bx-search'></button>
+        </div>
+        <div class="weather-box">
+            <div class="info-weather">
+                <div class="weather">
+                    <img src="images/404.png" alt="">
+                    <p class="temperature">0<sup>°C</sup></p>
+                    <p class="description">Search</p>
+                </div>
+            </div>
+        </div>
+        <div class="weather-details">
+            <div class="humidity">
+                <i class='bx bx-water'></i>
+                <div class="text">
+                    <div class="info-humidity">
+                        <span>0%</span>
+                    </div>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="wind">
+                <i class='bx bx-wind'></i>
+                <div class="text">
+                    <div class="info-wind">
+                        <span>0Km/h</span>
+                    </div>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Weekly Forecast Section -->
+        <div class="weekly-forecast">
+            <!-- Default Forecast Items (Placeholder) -->
+            <div class="forecast-item">
+                <img src="images/cloud.png" alt="">
+                <p class="day">Mon</p>
+                <p class="temp">0°C</p>
+            </div>
+            <div class="forecast-item">
+                <img src="images/rain.png" alt="">
+                <p class="day">Tue</p>
+                <p class="temp">0°C</p>
+            </div>
+            <div class="forecast-item">
+                <img src="images/snow.png" alt="">
+                <p class="day">Wed</p>
+                <p class="temp">0°C</p>
+            </div>
+            <div class="forecast-item">
+                <img src="images/mist.png" alt="">
+                <p class="day">Thur</p>
+                <p class="temp">0°C</p>
+            </div>
+            <div class="forecast-item">
+                <img src="images/clear.png" alt="">
+                <p class="day">Fri</p>
+                <p class="temp">0°C</p>
+            </div>
+        </div>
+        
+        <div class="not-found">
+            <div class="box">
+                <img src="images/404.png">
+                <p>Oops location not found</p>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</body>
+</html>
